@@ -23,12 +23,12 @@ Wiki's I'm currently working on. These are not archived yet, but I am working on
 
 ### `finished`
 
-Contains a list of links to web.archive.org. This list is used for wikis that are already archived by someone else, and as a result, the `uploader.py` script doesn't function on these.
+Contains a list of links to archive.org. This list is used for wikis that are already archived by someone else, and as a result, the `uploader.py` script doesn't function on these. I don't update these wikis unless otherwise noted.
 
-### `upd8`
+### `upd8-month` and `upd8-year`
 
-Contains a list of links to api.php files of wikis that I already archived. I generally try to update the wikis in this list monthly. (Note, need to split this file based on wiki size!)
+Contains a list of links to api.php files of wikis that I already archived. The urls in `upd8-month` are updated monthly (see Projects for current status) and the urls in `upd8-year` are updated yearly.
 
 ### `keys.txt`
 
-Only seen in `.gitignore`, this file contains archive keys. These keys are privated and as a result, I don't commit them.
+Only seen in `.gitignore`, this file contains archive.org keys. These keys are private and as a result, I don't commit them.

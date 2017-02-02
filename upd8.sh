@@ -13,7 +13,7 @@ function year {
 	echo "-----------------------------"
 	mkdir year
 	cd year
-	python2 ../launcher.py upd8-year
+	python2 ../launcher.py ../upd8-year
 	echo "-----------------------"
 	echo "-- Starting uploader --"
 	echo "-----------------------"
@@ -31,7 +31,7 @@ function month {
         echo "------------------------------"
 	mkdir month
 	cd month
-        python2 launcher.py upd8-month
+        python2 ../launcher.py ../upd8-month
         echo "-----------------------"
         echo "-- Starting uploader --"
         echo "-----------------------"

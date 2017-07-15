@@ -1,10 +1,10 @@
 #!/bin/bash
 # Simple upd8er
-# Last edited on 1-11-16
+# Last edited on 15-7-17
 
 function uploader {
-	if [ "$0" = "year" ]; then python2 uploader.py upd8-year; fi
-	if [ "$0" = "month" ]; then python2 uploader.py upd8-month; fi
+	if [ "$0" = "year" ]; then python2 ../uploader.py upd8-year; fi
+	if [ "$0" = "month" ]; then python2 ../uploader.py upd8-month; fi
 }
 
 function year {
@@ -13,10 +13,12 @@ function year {
 	echo "-----------------------------"
 	mkdir year
 	cd year
+	cp ../dumpgenerator.py .
 	python2 ../launcher.py ../upd8-year
 	echo "-----------------------"
 	echo "-- Starting uploader --"
 	echo "-----------------------"
+        rm dumpgenerator.py
 	uploader "year"
 	cd ../
 	echo "-----------------"
@@ -31,10 +33,12 @@ function month {
         echo "------------------------------"
 	mkdir month
 	cd month
+        cp ../dumpgenerator.py .
         python2 ../launcher.py ../upd8-month
         echo "-----------------------"
         echo "-- Starting uploader --"
         echo "-----------------------"
+        rm dumpgenerator.py
         uploader "month"
 	cd ../
         echo "-----------------"
